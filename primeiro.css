@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url("fontes/SuperMario256.ttf");
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url("fontes/Minecrafter.Reg.ttf");
+}
+
+@font-face {
+    font-family: pixel;
+    src: url("fontes/Pixelmania.ttf");
+}
+
+@font-face {
+    font-family: technology;
+    src: url("fontes/Technology-BoldItalic.ttf");
+}
+
+body{
+    background-image: url(https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large);
+    /* background-image: url(https://img.freepik.com/fotos-premium/parede-de-tijolo-moderno-renderizacao-em-3d_118019-218.jpg);  */
+}
+
+
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: #050505;  
+    padding: 10px 10px; 
+}
+
+.header img{
+    float: right;
+    margin-right: 100px;
+    width: 30px;
+    border-radius: 20px;
+    border: 1px solid #032A82;
+    
+}
+
+.header-box{
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 3px;
+}
+
+.header a{
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font: 20px Verdana;
+    margin: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-family: minecraft;
+}
+
+.header a:hover{
+    height: 100%;
+    color: #032a82;
+    
+}
+
+#foto{
+    border: 3px solid rgb(3, 3, 68);
+    border-radius: 60px;
+    margin: 10px 0px 0px 120px;
+    width: 15%;
+    height: 212px;
+}
+
+#foto:hover{
+    border:4px dotted rgb(9, 7, 146);
+}
+
+.apresentacao{
+    display: inline-block;
+    width: 100%;
+    height:250px;
+}
+.apresentacao h1{
+    color: #ca6f07;
+    text-shadow:3px 3px #000002 ;
+    font-family: mario;
+    font-size: 60px;
+    text-align: right;
+    margin: -180px 0px 0px 350px;
+    padding: 0px 190px 0px 0px;
+}
+.container{
+    border-radius: 10px;
+    margin: 2px 60px 40px 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+#sobre{
+    padding-top: 30px;
+    padding-right: 8%;
+    text-align: right;
+    color: #041844;
+    font-family: mario;
+   }
+
+#texto{
+    padding: 10px 25px 10px 41%;  
+    color: #041844;
+    text-align: justify left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.container ul{
+    margin: 3% 6% 10% 5%;
+    height: 100%;
+    
+}
+.container h1{
+    margin-bottom: 30px;
+}
+
+.menu{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(214, 213, 211);
+    background-image: url('https://neilpatel.com/wp-content/uploads/2019/05/icones-de-aplicativos-de-midias-sociais.jpeg');
+    width: 30%;
+    height: 270px;
+    float: left;
+    margin: 110px 0px 0px 74px;
+  
+}
+
+.menu a{
+    display: inline-block;
+    color: #041844;
+    background-color: #ffff;
+    border-radius: 40px;
+    font-size: 36px;
+    font-family: minecraft;
+    text-decoration: none;
+    margin: 40px 0% 1% 13%;
+    padding: 0px 23px 0px 23px;
+}
+
+.menu a:hover{
+    background-color: #041844;
+    border-radius: 40px;
+    color: white;
+    margin-left:60px;
+    margin-top: 30px;
+    padding: 0px 23px 0px 23px;
+
+}
+.listas{
+    margin-left: 90px;
+}
+.listas h1{
+        color: #041844;
+        padding-top: 30px;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    
+.container ul li{
+    color: #041844;
+    display: inline-block;
+    width: 25%;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    
+}
+
+.container ul li img{
+    display: inline-block;
+    width: 100%; 
+    height: 200px;
+    border-radius: 65px;
+}
+
+.container ul li img:hover{
+   border: 2px double rgb(16, 31, 117);
+}
+
+.container ul li p{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.listas{
+    margin-bottom: 100px;
+    border: 1px solid transparent;
+}
+
+.rodape{
+    color:azure;
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    background-color:#050505;  
+    padding: 10px 10px; 
+}
+
+.rodape a{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}    
