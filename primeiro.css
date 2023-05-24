@@ -31,6 +31,7 @@ body{
 
 
 .header{
+    position: fixed;
     width: 100%;
     height: 55px;
     background-color: #050505;  
@@ -63,35 +64,38 @@ body{
 
 .header a:hover{
     height: 100%;
-    color: #032a82;
+    color: #ca3e07;
     
 }
 
+.apresentacao{
+    width: 80%;
+    height:230px;
+    padding-top: 30px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+.apresentacao h1{
+    color: #ca3e07;
+    text-shadow: 0px 8px 2px #000002 ;
+    font-family: mario;
+    font-size: 5rem;
+    text-align: center;
+    margin: -180px 0px 0px 320px;
+    padding: 0px 0px 0px px;
+}
+
 #foto{
-    border: 3px solid rgb(3, 3, 68);
+    border: 3px solid #ca3e07;
     border-radius: 60px;
-    margin: 10px 0px 0px 120px;
-    width: 15%;
+    margin: 80px 0px 0px 70px;
+    width: 20%;
     height: 212px;
 }
 
 #foto:hover{
-    border:4px dotted rgb(9, 7, 146);
-}
+    border:5px dotted #ca3e07;
 
-.apresentacao{
-    display: inline-block;
-    width: 100%;
-    height:250px;
-}
-.apresentacao h1{
-    color: #ca6f07;
-    text-shadow:3px 3px #000002 ;
-    font-family: mario;
-    font-size: 60px;
-    text-align: right;
-    margin: -180px 0px 0px 350px;
-    padding: 0px 190px 0px 0px;
 }
 .container{
     border-radius: 10px;
@@ -101,20 +105,24 @@ body{
 
 #sobre{
     padding-top: 30px;
-    padding-right: 8%;
+    padding-right: 3%;
     text-align: right;
-    color: #041844;
+    color: #ca3e07;
     font-family: mario;
+    font-size: 1.9rem;
    }
 
 #texto{
     padding: 10px 25px 10px 41%;  
-    color: #041844;
+    color: #742303;
     text-align: justify left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
 
+.container{
+    margin-top: 9%;
+}
 .container ul{
     margin: 3% 6% 10% 5%;
     height: 100%;
@@ -125,20 +133,18 @@ body{
 }
 
 .menu{
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(202, 35, 35);
     border-radius: 10px;
-    background-color: rgb(214, 213, 211);
-    background-image: url('https://neilpatel.com/wp-content/uploads/2019/05/icones-de-aplicativos-de-midias-sociais.jpeg');
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210731/pngtree-pixel-style-abstract-colorful-mosaic-background-image_756335.jpg');
     width: 30%;
     height: 270px;
     float: left;
     margin: 110px 0px 0px 74px;
-  
 }
 
 .menu a{
     display: inline-block;
-    color: #041844;
+    color: #ca3e07;
     background-color: #ffff;
     border-radius: 40px;
     font-size: 36px;
@@ -149,7 +155,7 @@ body{
 }
 
 .menu a:hover{
-    background-color: #041844;
+    background-color: #ca3e07;
     border-radius: 40px;
     color: white;
     margin-left:60px;
@@ -200,16 +206,25 @@ body{
     border: 1px solid transparent;
 }
 
+#seta-retorno{
+    position: fixed;
+    top: 84%;
+    left:93%;
+}
+
+#seta-retorno img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    
+}
+
 .rodape{
     color:azure;
     text-align: center;
     width: 100%;
-    height: 75px;
+    height: 65px;
     background-color:#050505;  
-    padding: 10px 10px; 
-}
+    padding: 20px 0px 0px 0px; 
 
-.rodape a{
-    color:rgb(255, 255, 255);
-    font-size: 20px;
-}    
+}
