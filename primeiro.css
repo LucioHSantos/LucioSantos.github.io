@@ -20,211 +20,251 @@
 }
 
 @font-face {
-    font-family: technology;
-    src: url("fontes/Technology-BoldItalic.ttf");
+    font-family: game;
+    src: url('fontes/game1.ttf');
 }
 
 body{
-    background-image: url(https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large);
-    /* background-image: url(https://img.freepik.com/fotos-premium/parede-de-tijolo-moderno-renderizacao-em-3d_118019-218.jpg);  */
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .header{
-    position: fixed;
-    width: 100%;
-    height: 55px;
-    background-color: #050505;  
-    padding: 10px 10px; 
-}
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+    background-color: rgb(2, 8, 4);
+    width:100%;
+    height: 8rem;
 
-.header img{
-    float: right;
-    margin-right: 100px;
-    width: 30px;
-    border-radius: 20px;
-    border: 1px solid #032A82;
-    
-}
-
-.header-box{
-    text-align: right;
-    margin-right: 40px;
-    margin-top: 3px;
 }
 
 .header a{
-    text-align: right;
-    color: rgb(255, 255, 255);
-    font: 20px Verdana;
-    margin: 5px 5px 5px 5px;
+    height: 3rem;
+    color: #ffff;
     text-decoration: none;
     font-family: minecraft;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
 }
 
 .header a:hover{
-    height: 100%;
-    color: #ca3e07;
-    
+    color: #660303;
+    text-shadow: 0.2rem 0.2rem #150366;
 }
 
 .apresentacao{
-    width: 80%;
-    height:230px;
-    padding-top: 30px;
-    padding-right: 40px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3%;
 }
-.apresentacao h1{
-    color: #ca3e07;
-    text-shadow: 0px 8px 2px #000002 ;
-    font-family: mario;
-    font-size: 5rem;
+
+.apresentacao img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 40px;
+    border: 0.4rem dashed #000000;
+    margin-left: 5%;
+}
+
+.apresentacao img:hover{
+    border: 0.4rem dashed #660303;
+    text-shadow: 0.2rem 0.2rem #150366;
+
+}
+
+.apresentacao h1{ 
+    width: 70%;
+    height: 60%;
+    font-family:mario;
+    font-size: 3.9rem;
+    color: #ffff;
     text-align: center;
-    margin: -180px 0px 0px 320px;
-    padding: 0px 0px 0px px;
+    text-shadow: 0.2rem 0.5rem 0.1rem #000000;
 }
 
-#foto{
-    border: 3px solid #ca3e07;
-    border-radius: 60px;
-    margin: 80px 0px 0px 70px;
-    width: 20%;
-    height: 212px;
-}
+.apresentacao h1:hover{
+    color: #660303;
+    text-shadow: 0.2rem 0.2rem #150366;
 
-#foto:hover{
-    border:5px dotted #ca3e07;
-
-}
-.container{
-    border-radius: 10px;
-    margin: 2px 60px 40px 60px;
-    background-color: rgb(255, 255, 255);
-}
-
-#sobre{
-    padding-top: 30px;
-    padding-right: 3%;
-    text-align: right;
-    color: #ca3e07;
-    font-family: mario;
-    font-size: 1.9rem;
-   }
-
-#texto{
-    padding: 10px 25px 10px 41%;  
-    color: #742303;
-    text-align: justify left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
 }
 
 .container{
-    margin-top: 9%;
-}
-.container ul{
-    margin: 3% 6% 10% 5%;
-    height: 100%;
-    
-}
-.container h1{
-    margin-bottom: 30px;
+    border: 3px solid black;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px black;
+    background-color: #ffff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;  
 }
 
 .menu{
-    border: 3px solid rgb(202, 35, 35);
-    border-radius: 10px;
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210731/pngtree-pixel-style-abstract-colorful-mosaic-background-image_756335.jpg');
-    width: 30%;
-    height: 270px;
-    float: left;
-    margin: 110px 0px 0px 74px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #dad609;
+    border-radius: 4%;
+    box-shadow: 3px 3px 2px #000000;
+    width: 24%;
+    height: 20rem;
+    margin: 6% 2% 2% 2%;
+    padding-bottom: 1rem;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6EGerG1BzalJVZUqArxgagR56BsI3R_ma3H_Gvlnp2udr1OXfcOopSShVJCH8mfWiS4&usqp=CAU");
+    
 }
 
 .menu a{
-    display: inline-block;
-    color: #ca3e07;
-    background-color: #ffff;
-    border-radius: 40px;
-    font-size: 36px;
+    border: 3px solid #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
     font-family: minecraft;
+    font-size: 1.8rem;
     text-decoration: none;
-    margin: 40px 0% 1% 13%;
-    padding: 0px 23px 0px 23px;
+    color: #dad609;
+    background-color: #660303;
+    box-shadow: 4px 2px 3px #000000;
 }
 
 .menu a:hover{
-    background-color: #ca3e07;
-    border-radius: 40px;
-    color: white;
-    margin-left:60px;
-    margin-top: 30px;
-    padding: 0px 23px 0px 23px;
-
+    margin-left: 22%;
+    border: 2px solid black;
+    color: #660303;
+    background-color: #ffff;
+    box-shadow: 4px 2px 3px #150366;
 }
+
+#sobre{
+    display: flex;
+    align-self: flex-end;
+    margin-top: -35%;
+    margin-right: 2%;
+    font-family: minecraft;
+    font-size: 2rem;
+    color:#660303;
+    text-shadow: 2px 2px #150366;
+}
+
+#texto{
+    width: 68%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-family: game;
+    font-size: 1rem;
+}
+
 .listas{
-    margin-left: 90px;
-}
-.listas h1{
-        color: #041844;
-        padding-top: 30px;
-        text-align: center;
-        font-family:Georgia, 'Times New Roman', Times, serif
-    }
-    
-.container ul li{
-    color: #041844;
-    display: inline-block;
-    width: 25%;
-    margin-left: 55px;
-    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
-.container ul li img{
-    display: inline-block;
-    width: 100%; 
-    height: 200px;
-    border-radius: 65px;
+.listas ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
 }
 
-.container ul li img:hover{
-   border: 2px double rgb(16, 31, 117);
+.listas ul h1{
+    display: flex;
+    justify-content: center;
+    font: 2rem minecraft;
+    color: #660303;
+    text-shadow: 2px 2px black;
+    padding-top: 1%;
 }
 
-.container ul li p{
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+.caixa-items{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.listas ul li{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.listas ul li p{
+    font: 1rem game, serif;
     text-align: center;
-    text-decoration: underline;
 }
 
-.listas{
-    margin-bottom: 100px;
-    border: 1px solid transparent;
+.listas ul li img{
+    width: 15rem;
+    height: 12rem;
+    margin-top: 5%;
+    border-radius: 40px;
 }
 
 #seta-retorno{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border-radius: 40px;
     position: fixed;
-    top: 84%;
-    left:93%;
+    top: 93%;
+    right: 5%;
 }
 
 #seta-retorno img{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    
+    width: 2rem;
+    height:2rem;
+    background-color: #ffff;
+    border-radius: 40px;
+    box-shadow: 0px 4px #000000;
 }
+
 
 .rodape{
-    color:azure;
-    text-align: center;
     width: 100%;
-    height: 65px;
-    background-color:#050505;  
-    padding: 20px 0px 0px 0px; 
-
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.2rem minecraft;
+    text-shadow: 4px 4px #150366;
+    margin-top: 1%;
+    padding: 1%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
