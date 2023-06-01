@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*seleção de fontes utilizadas*/
+@font-face {
+    font-family: mario;
+    src: url("../fontes/mario.ttf");
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url("../fontes/minecraft-reg.ttf");
+}
+
+@font-face {
+    font-family: pixel;
+    src: url("../fontes/Pixelmania.ttf");
+}
+
+@font-face {
+    font-family: game;
+    src: url('../fontes/game1.ttf');
+}
+
+
+body{
+    min-width: 700px;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+
+
+/*cabeçalho*/
+header{
+    width: 100%;
+    height: 4rem;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-image: linear-gradient(#041b1b, #034747);  
+}
+
+.nav-link{
+    margin: 0 -2%;
+    height: 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: minecraft;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    color: #f04c31;
+    text-shadow: 0.2rem 0.2rem #3341c7;
+}
+
+
+/*foto de perfil e titulo da página*/
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3% 10%;
+    padding: 1% 2%;
+    border: 0.4rem dashed #041b1b;
+    background-color: #041b1b80;
+}
+
+.apresentacao img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 4em;
+    border: 0.4rem dashed #df0000;
+    margin-left: 5%;
+    box-shadow: 0.5rem 0.5rem 0.1rem #072C2C;
+}
+
+.apresentacao img:hover{
+    border: 0.4rem dashed #041b1b;
+}
+
+.apresentacao h1{ 
+    width: 70%;
+    height: 60%;
+    font-family: mario;
+    font-size: 3.9rem;
+    color: #ffff;
+    letter-spacing: 6px;
+    text-align: center;
+    text-shadow: 0.8rem 0.8rem 0.1rem #041b1b;
+}
+
+.apresentacao h1:hover{
+    color: #f04c31;
+    text-shadow: 0.5rem 0.5rem 0.1rem #041b1b;
+
+}
+/*corpo da página*/
+.container{
+    border: 0.4rem solid #041b1b;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px #041b1b;
+    background-color: #ffff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;  
+}
+
+/*menu de contato*/
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #df0000;
+    border-radius: 4%;
+    box-shadow: 0.5rem 0.5rem 0.2rem  #041b1b;
+    width: 24%;
+    height: 17rem;
+    margin: 7% 2% 2% 2%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6EGerG1BzalJVZUqArxgagR56BsI3R_ma3H_Gvlnp2udr1OXfcOopSShVJCH8mfWiS4&usqp=CAU");
+    
+}
+
+.menu-links{
+    border: 3px solid #c71104;
+    border-radius: 1rem;
+    display: flex;
+    margin: 7%;
+    padding: 3%;
+    font-family: minecraft;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #c71104;
+    background-color: #ffffff;
+    box-shadow: 2px 2px #c71104;
+}
+
+.menu-links:hover{
+    margin-left: 22%;
+    border: 5px solid #df0000;
+    color: #df0000;
+    background-color: #ffff;
+    box-shadow: 4px 2px #041b1b;
+}
+
+/*bloco de apresentação*/
+.saudacao{
+    display: flex;
+    align-self: center;
+    margin-top: -30%;
+    margin-left: 9rem;
+    font-family: minecraft;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #c71104;
+    text-shadow: 3px 4px hsla(180, 73%, 10%, 0.635);
+    }
+
+.saudacao-texto{
+    width: 68%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 2%;
+    margin-right: 3%;
+    font-family: game;
+    font-size: 1rem;
+}
+
+/*experiencia e formacoes*/
+.habilidades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.habilidades ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+.habilidades ul h1{
+    display: flex;
+    justify-content: center;
+    font: 2rem minecraft;
+    letter-spacing: 3px;
+    color: #c71104;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.377);
+    padding-top: 1%;
+}
+
+.habilidades-items{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.habilidades-item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+
+.habilidades-item p{
+    font: 1rem game, serif;
+    text-align: center;
+}
+
+.habilidades-img{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 5%;
+    border-radius: 100px;
+    box-shadow: 0.2rem 0.2rem 0.2rem #041b1b;
+}
+
+
+.habilidades-img:hover{
+    box-shadow: -0.1rem -0.1rem 0.2rem #041b1b;
+    transform: scale(1.1);
+}
+
+/*Formacao*/
+.formacao{
+    width: 80%;
+    display: flex;
+    align-self: center;
+}
+.formacao-titulo{
+    display: flex;
+    justify-content: center;
+    font: 2rem minecraft;
+    letter-spacing: 3px;
+    color: #c71104;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.377);
+    padding: 2%;
+}
+
+.cursos li{
+    border: 1px solid ;
+    box-shadow: 2px 2px 2px #041b1b;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2%;   
+}
+
+.cursos li:hover{
+    transform: scale(1.1);
+}
+
+.cursos li img{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid #041b1b;
+    box-shadow: 2px 2px 3px #041b1b;
+}
+
+.cursos li p{
+    font: 0.8rem game;
+    padding: 0 2%;
+}
+
+.texto-direita{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+/*seta de voltar ao topo*/
+#seta-retorno{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border-radius: 40px;
+    position: fixed;
+    top: 93%;
+    right: 5%;
+}
+
+#seta-retorno img{
+    width: 2rem;
+    height:2rem;
+    background-color: #ffff;
+    border-radius: 40px;
+    box-shadow: 0px 4px #041b1b;
+}
+
+/*faixa de rodapé*/
+footer {
+    width: 100%;
+    color: #ffffff;
+    background-image: linear-gradient(#041b1b, #034747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.2rem minecraft;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
