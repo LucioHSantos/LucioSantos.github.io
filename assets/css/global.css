@@ -115,46 +115,64 @@ header{
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     width: 100%;
     font: 1.2rem minecraft;
-    margin-top: 1%;
-    padding: 2%;
     color: var(--cor-secundaria2);
     background: var(--cor-principal1); 
 }
 
-.login-with {
+footer p{
+    align-self: center;
+    padding: 0.5rem 0rem 0.5rem 0.9rem;
+    width: 75%;
+    margin-left: 6rem;
+    border: 0.5rem solid var(--cor-principal2);
+    border-radius: 99px;
+    background-color: var(--cor-secundaria2);
+    color: var(--cor-principal2);
+}
+
+.footer-midias {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    height: 50px;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 6rem;
   }
 
-  .login-with img{
+  .footer-midias img{
     align-self: center;
-    width: 20px;
-    height: 30px;
+    width: 1rem;
+    height: 1rem;
   }  
-  .button-log {
+  .footer-button{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 30%;
-    border: 3px solid var(--cor-principal2);
+    border: 0.27rem solid var(--cor-principal2);
     background-color: var(--cor-secundaria2);
     box-shadow: 4px 4px var(--cor-principal1);
+    transition: border-color 0.3s,
+    box-shadow 0.3s;
+  }
+
+  .footer-button:hover,
+  .footer-button:focus{
+    box-shadow: none;
+    transition: 0.3s;
+    transform: translate(3px, -3px);
   }
   
+
  
-  .button-log:active{
+  .footer-button:active{
     box-shadow: 0px 0px var(--cor-principal1);
     transform: translate(3px, 3px);
-    border: 4px outset var(--cor-principal2);
   }
   
 

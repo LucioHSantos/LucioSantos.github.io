@@ -60,17 +60,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.5rem;
     color: var(--cor-principal2);
     font-weight: 400;
-    font: 20px minecraft, serif;
+    font: 0.8rem minecraft, serif;
   }
   
   .title span {
-    text-align: end;
+    text-align: center;
     color: var(--cor-principal1);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .midias {
