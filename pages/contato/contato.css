@@ -5,53 +5,55 @@
   --cor-secundaria2: #fafafa; 
 }
 
-body{
-    min-width: 700px;
-    width: 100vw;
-    min-height: 100vh;
-    background-image: url("https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .formulario{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-.formulario-titulo{
+.formulario-texto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
-    gap: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.356);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+    justify-content: center;
+    width: 60%;
+    padding-top: 1rem;
+    gap: 1.5rem;
+    border-top: 1px solid #1a203767;
+    border-bottom: 1px solid #1a203767;
 }
 
-.formulario-titulo h2{
+.formulario-texto h2{
     align-items: center;
-    font: 50px minecraft;
-    border-radius: 0px;
-    border: 10px dashed var(--cor-principal2);
+    font: 2rem minecraft;
+    padding: 1%;
+    border: 0.5rem solid var(--cor-principal1);
+    border-radius: 99px;
+    box-shadow: 0.2rem 0.2rem var(--cor-secundaria1);
     color: var(--cor-principal1);
 }
 
 .formulario-img{
-    width: 500px;
+    width: 60%;
+}
+
+.formulario p{
+  
+  text-align: center;
+  font: 1rem Roboto, serif;
+  font-weight: 800;
+  color: var(--cor-principal1);
 }
 
 .form {
-    width: 300px;
-    padding: 20px;
-    background: #3342c73d;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    padding: 1rem;
+    background: #3342c73d;
     border-radius: 5px;
    
   }
@@ -59,20 +61,12 @@ body{
   .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 0.5rem;
-    color: var(--cor-principal2);
-    font-weight: 400;
-    font: 0.8rem minecraft, serif;
+    color: var(--cor-principal1);
+    font: 2.3rem minecraft, serif;
+    font-weight: 600;
   }
   
-  .title span {
-    text-align: center;
-    color: var(--cor-principal1);
-    font-weight: 600;
-    font-size: 20px;
-  }
 
   .midias {
     display: flex;
@@ -94,9 +88,9 @@ body{
     width: 3rem;
     height: 3rem;
     border-radius: 30%;
-    border: 0.27rem solid var(--cor-principal2);
+    border: 0.27rem solid var(--cor-principal1);
     background-color: var(--cor-secundaria2);
-    box-shadow: 4px 4px var(--cor-principal1);
+    box-shadow: 4px 4px var(--cor-secundaria1);
     transition: border-color 0.3s,
     box-shadow 0.3s;
   }
@@ -117,8 +111,8 @@ body{
     border-radius: 90px;
     color: var(--cor-principal1);
     background: var(--cor-lightgreyInput);
-    border: 3px solid var(--cor-principal2);
-    box-shadow: 1px 3px var(--cor-principal1);
+    border: 3px solid var(--cor-principal1);
+    box-shadow: 1px 3px var(--cor-secundaria1);
     transition: 0.3s;
   }
   
@@ -131,7 +125,8 @@ body{
   }
 
   input, textarea{
-    color: var(--cor-secundaria2);
+    padding-left: 2rem;
+    color: var(--cor-principal1);
     background: #1a203744;
     border: 0.125rem solid transparent;
     border-radius: 1.125rem;
@@ -145,7 +140,7 @@ body{
   textarea:focus{
     outline: none;
     border: 0.3rem solid;
-    border-color: var(--cor-principal2);
+    border-color: var(--cor-principal1);
     box-shadow: 0 0 0 0.3125rem  #1a203744;
   }
 
@@ -162,8 +157,8 @@ body{
     border-radius: 90px;
     color: var(--cor-principal1);
     background: var(--cor-lightgreyInput);
-    border: 9px solid var(--cor-principal2);
-    box-shadow: 1px 3px var(--cor-principal1);
+    border: 9px solid var(--cor-principal1);
+    box-shadow: 3px 3px var(--cor-secundaria1);
     cursor: pointer;
     transition: 0.3s;
   }
@@ -172,6 +167,7 @@ body{
   button:disabled{
     cursor: not-allowed;
     background: var(--cor-principal1);
+    color: var(--cor-secundaria2);
   }
 
   .sucess,

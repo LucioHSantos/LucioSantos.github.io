@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="../../assets/css/global.css">
         <link rel="stylesheet" href="../../pages/contato/contato.css">
@@ -15,79 +15,81 @@
         <title>Contato</title>
     </head>
     <body>
-        <!-- cabeçalho -->
+
+        
         <header id="topo">
-            <nav class="nav-links">
+            <nav class="nav container">
                 <a  class="nav-link" href="../main/index.html">Home</a>
                 <a class="nav-link" href="../projetos/projetos.html">Projetos</a>
-                <a class="nav-link" href="../contato/contato.html"><span class="pagina-atual">Contato</span></a> 
+                <a class="pagina-atual" href="../contato/contato.html">Contato</a> 
             </nav>      
         </header>
 
        
         
-    <main class="formulario container painel">
-        <div class="formulario-titulo">
-             <h2>Contato</h2>
-             <img class="formulario-img" src="https://blush.design/api/download?shareUri=s491xiKGJRcryHSd&c=Bottom_0%7E89c5cc-0.1%7E393f82-0.2%7E393f82_Hair_0%7E4a312c-0.1%7E2c1b18-0.2%7E2c1b18_Skin_0%7Edcae92-0.1%7Ed4a181-0.2%7E915b3c_Top_0%7Ef2f2f2-0.1%7Ea8e5ba-0.2%7Eff4133&w=800&h=800&fm=png" alt="arte digital de duas pessoas conversando"> 
-        </div>
-        
-        <form class="form" action="https://formsubmit.co/devluciosantos@gmail.com" method="POST" data-form>
-            <div class="title">
-                Acesse meus perfis sociais <br><span> whatsapp, github e linkedin</span> clicando nos botoes abaixo ou me envie uma mensagem.
+        <main class="formulario container painel">
+            <div class="formulario-texto">
+                <h2>Contato</h2>
+                <p>Eu adoraria escutar sobre seu trabalho atual e como eu posso contribuir.  
+                Sou uma pessoa trabalhadora e positiva que sempre cumprirá as demandas com um senso de propósito e atenção aos detalhes. 
+                Juntos construiremos algo incrível<br>
+                Sinta-se a vontade para me contatar através dos botões ao lado ou se preferir me envie um e-mail através do formulário.
+                </p>
+
+                <img class="formulario-img" src="https://blush.design/api/download?shareUri=s491xiKGJRcryHSd&c=Bottom_0%7E89c5cc-0.1%7E393f82-0.2%7E393f82_Hair_0%7E4a312c-0.1%7E2c1b18-0.2%7E2c1b18_Skin_0%7Edcae92-0.1%7Ed4a181-0.2%7E915b3c_Top_0%7Ef2f2f2-0.1%7Ea8e5ba-0.2%7Eff4133&w=800&h=800&fm=png" alt="arte digital de duas pessoas conversando"> 
             </div>
             
-            <div class="midias"> 
-                <a class="midias-button" href="https://wa.me/5511942093932" target="_blank">
-                    <img src="../../assets/imagens/whatsapp.svg">
-                </a>
-
-                <a class="midias-button" href="https://github.com/LucioHSantos" target="_blank">
-                    <img src="../../assets/imagens/github.svg">
-                </a>
-                <a class="midias-button" href="https://www.linkedin.com/in/lucio-henrique-567999207/" target="_blank">
-                    <img src="../../assets/imagens/linkedin.svg" >
-                </a>
-            </div>
-
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required />
-
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required/>
-
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" required></textarea>
-
-            <button type="submit" data-button>Enviar</button>
-
-        </form>
-
-    </main>
-        
-
-            
-            <div class="seta-retorno">
-                <a href="#topo">
-                <img src="https://www.iconpacks.net/icons/2/free-up-arrow-icon-3097-thumb.png">
-                </a>
-
-            </div>
-
-            <footer class="container">
-                <p>email: devluciosantos@gmail.com</p>
-                <div class="footer-midias"> 
-                    <a class="footer-button" href="https://wa.me/5511942093932" target="_blank">
+            <form class="form" action="https://formsubmit.co/devluciosantos@gmail.com" method="POST" data-form>
+                
+                <div class="midias" id="midias"> 
+                    <a class="midias-button" href="https://wa.me/5511942093932" target="_blank">
                         <img src="../../assets/imagens/whatsapp.svg">
                     </a>
-    
-                    <a class="footer-button" href="https://github.com/LucioHSantos" target="_blank">
+
+                    <a class="midias-button" href="https://github.com/LucioHSantos" target="_blank">
                         <img src="../../assets/imagens/github.svg">
                     </a>
-                    <a class="footer-button" href="https://www.linkedin.com/in/lucio-henrique-567999207/" target="_blank">
+                    <a class="midias-button" href="https://www.linkedin.com/in/lucio-henrique-567999207/" target="_blank">
                         <img src="../../assets/imagens/linkedin.svg" >
                     </a>
                 </div>
-            </footer>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required/>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+
+                <button type="submit" data-button>Enviar</button>
+
+            </form>
+
+        </main>
+        
+        <div class="seta-retorno">
+            <a href="#topo">
+            <img src="https://www.iconpacks.net/icons/2/free-up-arrow-icon-3097-thumb.png">
+            </a>
+
+        </div>
+
+        <footer class="container">
+            <a class="footer-mail" href="#topo">email: devluciosantos@gmail.com</a>
+            <div class="footer-midias"> 
+                <a class="footer-button" href="https://wa.me/5511942093932" target="_blank">
+                    <img src="../../assets/imagens/whatsapp.svg">
+                </a>
+
+                <a class="footer-button" href="https://github.com/LucioHSantos" target="_blank">
+                    <img src="../../assets/imagens/github.svg">
+                </a>
+                <a class="footer-button" href="https://www.linkedin.com/in/lucio-henrique-567999207/" target="_blank">
+                    <img src="../../assets/imagens/linkedin.svg" >
+                </a>
+            </div>
+        </footer>
     </body>
 </html>

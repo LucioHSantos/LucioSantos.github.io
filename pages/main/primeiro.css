@@ -47,71 +47,36 @@
 
 }
 
-.menu{
+.box-saudacao{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    border: 3px solid var(--cor-principal2);
-    border-radius: 4%;
-    box-shadow: 0.2rem 0rem 0.2rem  #041b1b;
-    width: 24%;
-    height: 17rem;
-    margin: 7% 2% 2% 2%;
-    background-image: url("https://cdn.dorahacks.io/static/files/188142bd22ebb7dc06399044f8897b74.png@256h.webp");
-    
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1% 12%;
 }
-
-.menu-links{
-    border: 3px solid var(--cor-principal2);
-    border-radius: 1rem;
-    display: flex;
-    margin: 7%;
-    padding: 3%;
-    font-family: minecraft;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: var(--cor-principal2);
-    background-color: var(--cor-secundaria2);
-    box-shadow: 2px 2px var(--cor-principal2);
-}
-
-.menu-links:hover{
-    margin-left: 22%;
-    border: 5px solid var(--cor-principal2);
-    color: var(--cor-principal2);
-    background-color: var(--cor-secundaria2);
-    box-shadow: 4px 2px #041b1b;
-}
-
 .saudacao{
-    display: flex;
-    align-self: center;
-    margin-top: -30%;
-    margin-left: 9rem;
+    padding: 1%;
     font-family: minecraft;
     font-size: 2rem;
     letter-spacing: 3px;
-    color: var(--cor-principal2);
-    text-shadow: 3px 4px hsla(180, 73%, 10%, 0.635);
-    }
+    color: var(--cor-principal1);
+    border-radius: 19px;
+    border: 1rem solid var(--cor-principal1);
+    box-shadow: 0.2rem 0.2rem  #3342c7a1;    
+}
 
 .saudacao-texto{
-    width: 68%;
-    display: flex;
-    align-self: flex-end;
-    margin-top: 2%;
-    margin-right: 3%;
-    font: 1.2rem lato, serif;
-    font-weight: 400;
+    font: 1.4rem Roboto, serif;
+    font-weight: 600;
     color: var(--cor-principal1);
 }
 
 .habilidades{
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 1rem 0;    
+    padding: 1rem 0;   
 }
 
 .habilidades ul{
@@ -122,23 +87,25 @@
     padding-top: 4%;
 }
 
+
 .habilidades ul h1{
-    display: flex;
-    justify-content: center;
+    padding: 1%;
     font: 2rem minecraft;
     font-weight: 400;
     letter-spacing: 3px;
-    color: var(--cor-principal2);
-    text-shadow: 3px 4px rgba(0, 0, 0, 0.377);
-    padding-top: 1%;
+    color: var(--cor-principal1);
+    border: 1rem solid var(--cor-principal1);
+    border-radius: 99px;
+    box-shadow: 0.2rem 0.2rem #3342c7a1;
+    
 }
 
 .habilidades-items{
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
     padding: 2%;
 }
 
@@ -155,14 +122,14 @@
 
 
 .habilidades-item p{
-    font: 0.8rem lato, serif;
-    font-weight: 400;
+    font: 1.2rem Roboto, serif;
+    font-weight: 700;
     color: var(--cor-principal1);
 }
 
 .habilidades-img{
-    width: 3rem;
-    height: 3rem;
+    width: 6rem;
+    height: 6rem;
     margin-top: 5%;
     border-radius: 100px;
     box-shadow: 0.2rem 0.2rem 0.2rem var(--cor-principal1);
@@ -174,76 +141,6 @@
     transform: scale(1.1);
 }
 
-/*Formacao*/
-.formacao{
-    width: 80%;
-    display: flex;
-    align-self: center;
-}
-.formacao-titulo{
-    display: flex;
-    justify-content: center;
-    font: 2rem minecraft;
-    letter-spacing: 3px;
-    color: var(--cor-principal2);
-    text-shadow: 3px 4px rgba(0, 0, 0, 0.377);
-    padding: 2%;
-}
-
-.cursos li{
-    border: 1px solid ;
-    box-shadow: 2px 2px 2px var(--cor-principal1);
-    border-radius: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 2%;   
-}
-
-.cursos li:hover{
-    transform: scale(1.1);
-}
-
-.cursos li img{
-
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-    border: 2px solid var(--cor-principal1);
-    box-shadow: 2px 2px 3px var(--cor-principal1);
-}
-
-.cursos li p{
-    font: 0.8rem lato, serif;
-    font-weight: 400;
-    padding: 0 2%;
-}
-
-.texto-direita{
-    display: flex;
-    justify-content: end;
-    text-align: right;
-}
-/*seta de voltar ao topo*/
-#seta-retorno{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    border-radius: 40px;
-    position: fixed;
-    top: 93%;
-    right: 5%;
-}
-
-#seta-retorno img{
-    width: 2rem;
-    height:2rem;
-    background-color: var(--cor-secundaria2);
-    border-radius: 40px;
-    box-shadow: 0px 4px var(--cor-principal1);
-}
 
 
 
