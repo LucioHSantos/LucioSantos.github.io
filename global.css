@@ -1,77 +1,151 @@
-*{
+/* Estilos comuns */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
-    --cor-principal1:#1a2037;
+  }
+  
+  :root {
+    --cor-principal1: #1a2037;
     --cor-principal2: #ef374e;
     --cor-secundaria1: #3341c7;
-    --cor-secundaria2: #fafafa; 
-}
-
-
-/*seleção de fontes utilizadas*/
-@font-face {
+    --cor-secundaria2: #fafafa;
+  }
+  
+  /* seleção de fontes utilizadas */
+  @font-face {
     font-family: mario;
     src: url("../LucioSantos.github.io/assets/fontes/mario.ttf");
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: minecraft;
     src: url("../LucioSantos.github.io/assets/fontes/minecraft-reg.ttf");
-}
-
-
-.container{
+  }
+  
+  .container {
     padding: 1rem;
-}
-
-body{
-    min-width: 700px;
-    width: 100vw;
+  }
+  
+  body {
+    min-width: 100vw;
     min-height: 100vh;
     background-image: url("https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large");
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-.painel{
+  }
+  
+  /* Estilos responsivos para telas pequenas, como celulares */
+  @media screen and (max-width: 767px) {
+    .painel {
+      width: 95%;
+    }
+  
+    .nav {
+      justify-content: center;
+      padding-right: 2rem;
+    }
+  
+    .nav-link,
+    .pagina-atual {
+      width: 80%;
+      min-width: unset;
+    }
+  
+    .footer-mail {
+      width: 95%;
+      margin-left: 2rem;
+    }
+  
+    .footer-midias {
+      padding: 0 2rem;
+    }
+  }
+  
+  /* Estilos responsivos para telas médias, como tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .painel {
+      width: 90%;
+    }
+  
+    .nav {
+      justify-content: center;
+      padding-right: 4rem;
+    }
+  
+    .nav-link,
+    .pagina-atual {
+      width: 50%;
+      min-width: unset;
+    }
+  
+    .footer-mail {
+      width: 90%;
+      margin-left: 4rem;
+    }
+  
+    .footer-midias {
+      padding: 0 4rem;
+    }
+  }
+  
+  /* Estilos responsivos para telas grandes, como desktops */
+  @media screen and (min-width: 1024px) {
+    .painel {
+      width: 80%;
+    }
+  
+    .nav {
+      justify-content: flex-end;
+      padding-right: 8rem;
+    }
+  
+    .nav-link,
+    .pagina-atual {
+      width: 15%;
+      min-width: 160px;
+    }
+  
+    .footer-mail {
+      width: 75%;
+      margin-left: 6rem;
+    }
+  
+    .footer-midias {
+      padding: 0 6rem;
+    }
+  }
+  
+  /* Restante do código CSS */
+  .painel {
     border: 0.4rem solid var(--cor-principal1);
     border-radius: 1%;
     box-shadow: 0.5rem 0.5rem 0.5rem var(--cor-principal1);
     background-color: var(--cor-secundaria2);
-    width: 80%;
     margin-bottom: 1rem;
     display: flex;
-    flex-direction: column;  
-}
-
-header{
+    flex-direction: column;
+  }
+  
+  header {
     width: 100%;
     height: 4%;
-}
-
-
-.nav{
+  }
+  
+  .nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 4rem;
-    padding-right: 8rem;
     margin-bottom: 2rem;
-    background-color: var(--cor-principal1); 
-}
-
-.nav-link{
+    background-color: var(--cor-principal1);
+  }
+  
+  .nav-link {
     align-self: center;
     text-align: center;
     padding: 0.4%;
-    width: 15%;
-    min-width: 160px;
     font: 1.5rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
     border-radius: 3rem;
@@ -79,14 +153,11 @@ header{
     box-shadow: 4px -4px var(--cor-secundaria1);
     color: var(--cor-principal1);
     text-decoration: none;
-}
-
-
-.pagina-atual{
+  }
+  
+  .pagina-atual {
     align-self: center;
     text-align: center;
-    width: 15%;
-    min-width: 160px;
     padding: 0.4%;
     font: 1.5rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
@@ -94,11 +165,11 @@ header{
     background-color: var(--cor-secundaria2);
     box-shadow: 4px -4px var(--cor-principal2);
     color: var(--cor-principal1);
-    text-decoration: none;    
-}
-
-/*seta de voltar ao topo*/
-.seta-retorno{
+    text-decoration: none;
+  }
+  
+  /* seta de voltar ao topo */
+  .seta-retorno {
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -106,56 +177,53 @@ header{
     position: fixed;
     top: 93%;
     right: 5%;
-}
-
-.seta-retorno img{
+  }
+  
+  .seta-retorno img {
     width: 2rem;
-    height:2rem;
+    height: 2rem;
     background-color: #ffff;
     border-radius: 40px;
     box-shadow: 0px 4px var(--cor-principal1);
-}
-
-/*faixa de rodapé*/
-footer {
+  }
+  
+  /* faixa de rodapé */
+  footer {
     display: flex;
     align-items: center;
     width: 100%;
     min-width: 100px;
     font: 1.2rem minecraft;
     color: var(--cor-secundaria2);
-    background: var(--cor-principal1); 
-}
-
-.footer-mail{
+    background: var(--cor-principal1);
+  }
+  
+  .footer-mail {
     align-self: center;
     padding: 0.5rem 0 0.1rem 0.8rem;
-    width: 75%;
-    margin-left: 6rem;
     border: 0.5rem solid var(--cor-principal1);
     border-radius: 99px;
     background-color: var(--cor-secundaria2);
     box-shadow: 4px -4px var(--cor-secundaria1);
     color: var(--cor-principal1);
     text-decoration: none;
-}
-
-.footer-midias {
+  }
+  
+  .footer-midias {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 2rem;
     width: 100%;
-    padding: 0 6rem;
   }
-
-  .footer-midias img{
+  
+  .footer-midias img {
     align-self: center;
     width: 1rem;
     height: 1rem;
-  }  
-
-  .footer-button{
+  }
+  
+  .footer-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,8 +234,7 @@ footer {
     border: 0.27rem solid var(--cor-principal1);
     background-color: var(--cor-secundaria2);
     box-shadow: 4px -4px var(--cor-secundaria1);
-    transition: border-color 0.3s,
-    box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
   }
   
   .nav-link:hover,
@@ -175,32 +242,15 @@ footer {
   .footer-mail:hover,
   .footer-mail:focus,
   .footer-button:hover,
-  .footer-button:focus{
+  .footer-button:focus {
     box-shadow: none;
     transition: 0.3s;
     transform: translate(3px, -3px);
   }
   
-
- 
-  .footer-button:active{
+  .footer-button:active {
     box-shadow: 0px 0px var(--cor-principal1);
     transform: translate(3px, 3px);
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
