@@ -44,8 +44,8 @@ body {
     width: 100%;
   }
   .painel {
-    width: 100vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%
   }
 
   .nav {
@@ -99,8 +99,8 @@ body {
 /* Estilos responsivos para telas grandes, como desktops */
 @media screen and (min-width: 1024px) {
   .painel {
-    width: 80vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
   }
 
   .nav {
