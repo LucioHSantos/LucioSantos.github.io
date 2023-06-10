@@ -25,7 +25,7 @@
 
 
 .container{
-    padding: 20px 40px;
+    padding: 1rem;
 }
 
 body{
@@ -42,7 +42,7 @@ body{
 .painel{
     border: 0.4rem solid var(--cor-principal1);
     border-radius: 1%;
-    box-shadow: 2px 2px 2px var(--cor-principal1);
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--cor-principal1);
     background-color: var(--cor-secundaria2);
     width: 80%;
     margin-bottom: 1rem;
@@ -69,10 +69,12 @@ header{
 .nav-link{
     align-self: center;
     text-align: center;
+    padding: 0.4%;
     width: 15%;
+    min-width: 160px;
     font: 1.5rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
-    border-radius: 99px;
+    border-radius: 3rem;
     background-color: var(--cor-secundaria2);
     box-shadow: 4px -4px var(--cor-secundaria1);
     color: var(--cor-principal1);
@@ -84,9 +86,11 @@ header{
     align-self: center;
     text-align: center;
     width: 15%;
+    min-width: 160px;
+    padding: 0.4%;
     font: 1.5rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
-    border-radius: 99px;
+    border-radius: 3rem;
     background-color: var(--cor-secundaria2);
     box-shadow: 4px -4px var(--cor-principal2);
     color: var(--cor-principal1);
@@ -117,6 +121,7 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
+    min-width: 100px;
     font: 1.2rem minecraft;
     color: var(--cor-secundaria2);
     background: var(--cor-principal1); 
