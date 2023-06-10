@@ -1,61 +1,60 @@
-:root{
-    --cor-principal1:#1a2037;
+:root {
+    --cor-principal1: #1a2037;
     --cor-principal2: #ef374e;
     --cor-secundaria1: #3341c7;
-    --cor-secundaria2: #fafafa; 
-}
-
-
-/*foto de perfil e titulo da página*/
-.apresentacao{
+    --cor-secundaria2: #fafafa;
+  }
+  
+  /*foto de perfil e título da página*/
+  .apresentacao {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3% 10%;
+    margin: 3% 5%;
     padding: 1% 2%;
     border: 0.4rem dashed var(--cor-principal1);
-    background-color: #041b1b80;
-}
-
-.apresentacao img{
+    background-color: rgba(4, 27, 27, 0.5);
+  }
+  
+  .apresentacao img {
     width: 12rem;
     height: 12rem;
-    border-radius: 4em;
+    border-radius: 50%;
     border: 0.4rem dashed var(--cor-principal2);
     margin-left: 5%;
-    box-shadow: 0.5rem 0.5rem 0.1rem #072C2C;
-}
-
-.apresentacao img:hover{
-    border: 0.4rem dashed var(--cor-principal1);
-}
-
-.apresentacao h1{ 
+    box-shadow: 0.5rem 0.5rem 0.1rem #072c2c;
+  }
+  
+  .apresentacao img:hover {
+    border-color: var(--cor-principal1);
+  }
+  
+  .apresentacao h1 {
     width: 70%;
     height: 60%;
     font-family: mario;
     font-size: 3.9rem;
-    color: #ffff;
+    color: #fff;
     letter-spacing: 6px;
     text-align: center;
     text-shadow: 0.8rem 0.8rem 0.1rem var(--cor-principal1);
-}
-
-.apresentacao h1:hover{
+  }
+  
+  .apresentacao h1:hover {
     color: var(--cor-principal2);
     text-shadow: 0.5rem 0.5rem 0.1rem var(--cor-principal1);
-
-}
-
-.box-saudacao{
+  }
+  
+  .box-saudacao {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1% 12%;
-}
-.saudacao{
+    padding: 1% 5%;
+  }
+  
+  .saudacao {
     padding: 1%;
     font-family: minecraft;
     font-size: 2rem;
@@ -63,32 +62,31 @@
     color: var(--cor-principal1);
     border-radius: 19px;
     border: 1rem solid var(--cor-principal1);
-    box-shadow: 0.2rem 0.2rem  #3342c7a1;    
-}
-
-.saudacao-texto{
+    box-shadow: 0.2rem 0.2rem #3342c7a1;
+  }
+  
+  .saudacao-texto {
     font: 1.4rem Roboto, serif;
     font-weight: 600;
     color: var(--cor-principal1);
-}
-
-.habilidades{
+  }
+  
+  .habilidades {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 1rem 0;   
-}
-
-.habilidades ul{
+    padding: 1rem 0;
+  }
+  
+  .habilidades ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 4%;
-}
-
-
-.habilidades ul h1{
+  }
+  
+  .habilidades ul h1 {
     padding: 1%;
     font: 2rem minecraft;
     font-weight: 400;
@@ -97,63 +95,72 @@
     border: 1rem solid var(--cor-principal1);
     border-radius: 99px;
     box-shadow: 0.2rem 0.2rem #3342c7a1;
-    
-}
-
-.habilidades-items{
+  }
+  
+  .habilidades-items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     padding: 2%;
-}
-
-.habilidades-item{
-    width: 30%;
+  }
+  
+  .habilidades-item {
+    width: 100%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2%;
-}
-
-
-
-.habilidades-item p{
+  }
+  
+  .habilidades-item p {
     font: 1.2rem Roboto, serif;
     font-weight: 700;
     color: var(--cor-principal1);
-}
-
-.habilidades-img{
+  }
+  
+  .habilidades-img {
     width: 6rem;
     height: 6rem;
     margin-top: 5%;
     border-radius: 100px;
     box-shadow: 0.2rem 0.2rem 0.2rem var(--cor-principal1);
-}
-
-
-.habilidades-img:hover{
+  }
+  
+  .habilidades-img:hover {
     box-shadow: -0.1rem -0.1rem 0.2rem var(--cor-principal1);
     transform: scale(1.1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
+  
+  @media screen and (min-width: 768px) {
+    .apresentacao {
+      margin: 3% 10%;
+    }
+    
+    .box-saudacao {
+      padding: 1% 12%;
+    }
+    
+    .habilidades-item {
+      max-width: 25rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .apresentacao {
+      margin: 3% 15%;
+    }
+    
+    .box-saudacao {
+      padding: 1% 15%;
+    }
+    
+    .habilidades-item {
+      max-width: 20rem;
+    }
+  }
+  

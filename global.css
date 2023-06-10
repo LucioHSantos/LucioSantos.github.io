@@ -50,7 +50,7 @@
   
     .nav-link,
     .pagina-atual {
-      width: 80%;
+      width: 30%;
       min-width: unset;
     }
   
@@ -145,8 +145,8 @@
   .nav-link {
     align-self: center;
     text-align: center;
-    padding: 0.4%;
-    font: 1.5rem minecraft;
+    padding: 0.8%;
+    font: 1rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
     border-radius: 3rem;
     background-color: var(--cor-secundaria2);
@@ -159,7 +159,7 @@
     align-self: center;
     text-align: center;
     padding: 0.4%;
-    font: 1.5rem minecraft;
+    font: 1rem minecraft;
     border: 0.5rem solid var(--cor-principal1);
     border-radius: 3rem;
     background-color: var(--cor-secundaria2);
