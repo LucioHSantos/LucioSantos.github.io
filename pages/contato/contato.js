@@ -1,4 +1,3 @@
-
 class FormSubmit {
   constructor(settings) {
     this.settings = settings;
@@ -32,13 +31,14 @@ class FormSubmit {
 
   onSubmission(event) {
     event.preventDefault();
-    event.target.disabled = true;
-    event.target.innerText = "Enviando...";
+    this.formButton.disabled = true;
+    this.formButton.innerText = "Enviando...";
   }
 
   async sendForm(event) {
     try {
       this.onSubmission(event);
+
       var nome = document.getElementById("nome").value;
       var email = document.getElementById("email").value;
       var mensagem = document.getElementById("mensagem").value;
@@ -64,15 +64,15 @@ class FormSubmit {
   }
 
   init() {
-    if (this.form) this.formButton.addEventListener("click", this.sendForm);
+    if (this.form) this.form.addEventListener("submit", this.sendForm);
     return this;
   }
 }
+
 const formSubmit = new FormSubmit({
-  form: "[data-form]",
+  form: ".form",
   button: "[data-button]",
-  success: "<h1 class='success'>Mensagem enviada! Obrigado. <br> Retornarei assim que possível.</h1>",
+  success: "<h1 class='success'>Mensagem enviada! <br> Obrigado pelo contato, retornarei assim que possível.</h1>",
   error: "<h1 class='error'>Não foi possível enviar sua mensagem. Tente novamente por favor.</h1>",
 });
 formSubmit.init();
-
