@@ -5,24 +5,60 @@
     --cor-secundaria2: #fafafa; 
 }
 
-.cartas{
+.demo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.titulo{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.titulo h1{
+  text-align: center;
+  width: 30%;
+  padding: 0.8%;
+  font: 2rem minecraft;
+  border: 0.5rem solid var(--cor-principal1);
+  border-radius: 3rem;
+  background-color: var(--cor-secundaria2);
+  box-shadow: 4px -4px var(--cor-secundaria1);
+  color: var(--cor-principal1);
+}
+
+.titulo p{
+  font: 1rem Roboto, serif;
+  font-weight: 600;
+  color: var(--cor-principal1);
+}
+
+.deck{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
-}
-.card {
+    justify-content: space-around; 
+    gap: 5rem 2rem;
+    padding: 4%;
+  }
+.carta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25rem;
+    justify-content: center;
+    width: 15rem;
     height: 20rem;
     padding: 0.5rem;
-    background: rgba(198, 198, 198, 0.34);
+    gap: 3rem;
+    background: rgba(174, 175, 185, 0.281);
     border-radius: 8px;
     backdrop-filter: blur(5px);
     border-bottom: 3px solid var(--cor-principal1);
-    border-left: 2px  rgba(46, 33, 33, 0.774) outset;
+    border-left: 2px  rgba(46, 33, 33, 0.329) outset;
     box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.664);
     transform: skewX(10deg);
     transition: .4s;
@@ -30,58 +66,24 @@
     color: var(--cor-principal1);
   }
 
-  .card h1 {
+  .carta h2 {
+    padding-top: 12%;
     text-align: center;
     text-transform: uppercase;
-    margin: 1.3rem;
-    color: var(--cor-principal1);
+    font-family: minecraft, serif;    color: var(--cor-principal1);
     text-shadow: -10px 5px 10px var(--cor-secundaria1);
   }
-  .card-img{
-    width: 95%;
-    height: 75%;
+  
+  .carta-img{
+    width: 100%;
   }
   
-  .card:hover {
-    width: 30rem;
+  .carta:hover {
+    width: 40%;
     height: 25rem;
-    transform: skew(0deg);
-    border-top: 3px solid var(--cor-principal1);
-    
+    transform: skew(0.9deg);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px var(--cor-secundaria1);
   }
-  
-  .align {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-self: flex-start;
-  }
-  
-  .red {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ff605c;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  
-  .yellow {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ffbd44;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  
-  .green {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4e;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
-  }
-  
- 
   
   
