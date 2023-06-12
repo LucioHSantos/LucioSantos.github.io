@@ -177,25 +177,18 @@ header {
   text-decoration: none;
 }
 
-/* seta de voltar ao topo */
-.seta-retorno {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  border-radius: 40px;
-  position: fixed;
-  top: 93%;
+.seta{
+  position:fixed;
+  top: 88%;
   right: 5%;
 }
 
-.seta-retorno img {
-  width: 2rem;
-  height: 2rem;
-  background-color: #ffff;
-  border-radius: 40px;
-  box-shadow: 0px 4px var(--cor-principal1);
+.seta-img{
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--cor-secundaria2);
+  border-radius: 100%;
 }
-
 /* faixa de rodapé */
 footer {
   display: flex;
@@ -215,6 +208,11 @@ footer {
   box-shadow: 4px -4px var(--cor-secundaria1);
   color: var(--cor-principal1);
   text-decoration: none;
+}
+
+.footer-mail span{
+  font-family: inherit, serif;
+  font-weight: 700;
 }
 
 .footer-midias {

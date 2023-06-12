@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+  background-color: var(--cor-secundaria2);
 }
 .titulo{
 
@@ -36,7 +37,7 @@
   font: 2rem Roboto, serif;
   font-weight: 600;
   text-align: center;
-  color: var(--cor-principal1);
+  color: var(--cor-principal2);
 }
 
 .deck{
@@ -44,8 +45,9 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between; 
-    padding: 4%;
-    background-color: var(--cor-principal1);
+    padding: 5%;
+    background-image: url("https://i.pinimg.com/originals/03/c9/63/03c963dcb319597139e6322bc9a56243.jpg");
+    border-radius: 4%;
   }
 .carta {
     display: flex;
