@@ -24,28 +24,28 @@
   src: url("../LucioSantos.github.io/assets/fontes/minecraft-reg.ttf");
 }
 
-.container {
-  padding: 1rem;
-}
-
 body {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("https://pbs.twimg.com/media/FGCaE1NWYAAtA1g.jpg:large");
   display: flex;
   flex-direction: column;
   align-items: center;
+  background:  url("https://cdn1.duabhmoobtojsiab.com/img/kuvyoghmoobaHR0cHM6Ly9pLmltZ3VyLmNvbS9FUlhMamJoLmpwZw==.jpg");
+  background-size: 200em;
 }
+
+
 
 /* Estilos responsivos para telas pequenas, como celulares */
 @media screen and (max-width: 767px) {
+
   .container{
-    padding: 95%;
+    padding: 1%;
     width: 100%;
   }
   .painel {
     width: 80%;
-    height: 100%
+    height: 00%
   }
 
   .nav {
@@ -59,9 +59,17 @@ body {
     min-width: unset;
   }
 
+  .seta{
+    
+  }
+  .seta img{
+    width: 2rem;
+    height: 2rem;
+  }
   .footer-mail {
     width: 95%;
     margin-left: 2rem;
+    font-size: 0.6rem;
   }
 
   .footer-midias {
@@ -82,7 +90,7 @@ body {
 
   .nav-link,
   .pagina-atual {
-    width: 50%;
+    width: 20%;
     min-width: unset;
   }
 
@@ -126,7 +134,12 @@ body {
 
 /* Restante do código CSS */
 
-
+.container{
+  display: grid;  
+  grid-gap: 5px;  
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(2, 100px);  
+} 
 .painel {
   border: 0.4rem solid var(--cor-principal1);
   border-radius: 1%;
@@ -145,7 +158,8 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
+  padding: 1.5% 9rem;
   width: 100%;
   margin-bottom: 2rem;
   background-color: var(--cor-principal1);
@@ -179,8 +193,8 @@ header {
 
 .seta{
   position:fixed;
-  top: 88%;
-  right: 5%;
+  top: 82%;
+  right: 2%;
 }
 
 .seta-img{
@@ -194,6 +208,7 @@ footer {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 6rem;
   font: 1.2rem minecraft;
   color: var(--cor-secundaria2);
   background: var(--cor-principal1);
@@ -210,10 +225,7 @@ footer {
   text-decoration: none;
 }
 
-.footer-mail span{
-  font-family: inherit, serif;
-  font-weight: 700;
-}
+
 
 .footer-midias {
   display: flex;

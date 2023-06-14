@@ -7,8 +7,9 @@
 
 .formulario{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 1rem;
 }
 
@@ -19,7 +20,7 @@
     justify-content: center;
     width: 60%;
     padding-top: 1rem;
-    gap: 1.5rem;
+    gap: 1rem;
     border-top: 1px solid #1a203767;
     border-bottom: 1px solid #1a203767;
 }
@@ -52,6 +53,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    margin: 2% 0;
     padding: 1rem;
     background: #3342c73d;
     border-radius: 5px;
@@ -279,5 +281,21 @@
 
   100% {
     opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formulario{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario-texto{
+    width: 95%;
+    margin: 5% auto;
+  }
+
+  .form{
+    margin: 4% auto;
   }
 }
