@@ -35,9 +35,40 @@ body {
 }
 
 
+@media screen and (max-width: 550px){
+  .painel {
+    width: 90%;
+    margin-left: -5%;
+  }
 
-/* Estilos responsivos para telas pequenas, como celulares */
-@media screen and (max-width: 767px) {
+  .nav {
+    justify-content: center;
+  }
+
+  
+  .nav-link,
+  .pagina-atual {
+    width: 60%;
+    height: 2rem;
+    min-width: unset;  
+  }
+
+  .seta img{
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer-mail {
+    width: 95%;
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+  }
+
+  .footer-midias {
+    padding: 0 2rem;
+  }
+}
+
+@media screen  and (min-width: 551px)  and (max-width: 767px) {
 
   .container{
     padding: 1%;
@@ -45,7 +76,6 @@ body {
   }
   .painel {
     width: 80%;
-    height: 00%
   }
 
   .nav {
@@ -55,13 +85,11 @@ body {
 
   .nav-link,
   .pagina-atual {
-    width: 30%;
-    min-width: unset;
+    width: 50%;
+    min-width: unset;  
   }
 
-  .seta{
-    
-  }
+
   .seta img{
     width: 2rem;
     height: 2rem;

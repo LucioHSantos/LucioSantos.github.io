@@ -79,7 +79,7 @@
     text-transform: uppercase;
     font-family: Roboto, serif;  
     color: var(--cor-secundaria2);
-    text-shadow: -10px 5px 1px var(--cor-principal1);
+    text-shadow: -10px 5px 1px #1a20378f;
   }
 
   .carta p{
@@ -91,15 +91,23 @@
   .carta-img{
     width: 100%;
   }
-  
-  .carta h2:hover,
+ 
   .carta:hover {
     width: 40%;
     height: 25rem;
     transform: skew(0.9deg);
     transition: 0.5s;
     box-shadow: 2px 2px 2px var(--cor-secundaria1);
-    text-shadow: none;
+  }
+
+  .emconstrucao {
+    font-family: Roboto;
+    font-weight: 700;
+    padding: 4%;
+    border-radius: 11px;
+    box-shadow: 0px 1px 2px;
+    background-color: var(--cor-principal1);
+    color: var(--cor-secundaria2);
   }
   
   @media screen and (max-width: 767px) {
