@@ -1,135 +1,129 @@
-:root{
-    --cor-principal1:#1a2037;
-    --cor-principal2: #ef374e;
-    --cor-secundaria1: #3341c7;
-    --cor-secundaria2: #fafafa; 
+:root {
+  --cor-principal:#121c27;
+  --cor-principal2: #fafafa;
+  --cor-secundaria1:  #06af69;
+  --cor-secundaria2: #7d0aa0;
+  --font1: 'Open Sans', sans-serif;
+  --font2: 'Ubuntu', sans-serif;
 }
 
-.demo{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
-  background-color: var(--cor-secundaria2);
+.vitrine{
+    display: grid;
+    grid-template-areas:
+    "a1 a1 a1 a1 "
+    "a2 a2 a2 a2 ";
+    background-color: #23364d;
+    background: url("https://i.pinimg.com/originals/ee/8a/e1/ee8ae1c1d862baf5fd1ae83a59b67b46.jpg");
+    width: 100%;
 }
-
 
 .titulo{
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-top: 5%;
-}
-.titulo h1{
-  text-align: center;
-  width: 30%;
-  padding: 0.8%;
-  font: 2rem minecraft;
-  border: 0.5rem solid var(--cor-principal1);
-  border-radius: 3rem;
-  background-color: var(--cor-secundaria2);
-  box-shadow: 6px 6px var(--cor-secundaria1);
-  color: var(--cor-principal1);
-}
-
-.titulo p{
-  font: 2rem Roboto, serif;
-  font-weight: 600;
-  text-align: center;
-  color: var(--cor-principal2);
-}
-
-.deck{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 5%;
-    width: 97%;
-    margin-bottom: 2%;
-    background-color: #1a2037e8;
-    border-radius: 4%;
-  }
-.carta {
+    grid-area: a1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5%;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.titulo h1{
+    text-align: center;
+    width: 30%;
+    padding: 0.8%;
+    font: 2rem minecraft;
+    border: 0.5rem solid var(--cor-principal);
+    border-radius: 3rem;
+    background-color: var(--cor-principal2);
+    color: var(--cor-principal1);
+    }
+
+.titulo p{
+    font: 1.5rem var(--font2), serif;
+    font-weight: 600;
+    padding: 1%;
+    text-align: center;
+    color: var(--cor-principal1);
+    background-color: #fafafa;
+    border-radius: 2rem;
+    box-shadow:  0 0 1rem #121c27;
+}
+
+.deck{
+    grid-area: a2;
+    display: grid;
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c5 c6"
+    ;
+    flex-wrap: wrap;
+    grid-gap: 5rem;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 4%;
+    }
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2%;
-    width: 15rem;
+    min-width: 15rem;
     height: 20rem;
-    margin-bottom: 3rem;
-    padding: 0.2rem;
-    background: #fafafa13;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    background: #121c27da;
+    opacity:0.8;
     border-radius: 8px;
     backdrop-filter: blur(5px);
-    border: 1px solid var(--cor-secundaria2);
-    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.664); 
+    border-bottom: 3px solid var(--cor-principal1);
+    border-left: 2px  rgba(46, 33, 33, 0.329) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.664);
     transform: skewX(10deg);
     transition: .4s;
     overflow: hidden;
-    color: var(--cor-principal1);
+    color: var(--cor-principal2);
+   
   }
 
   .carta h2 {
+    padding-top: 3%;
     text-align: center;
     text-transform: uppercase;
-    font-family: Roboto, serif;  
-    color: var(--cor-secundaria2);
-    text-shadow: -10px 5px 1px #1a20378f;
-  }
-
-  .carta p{
-    font: 1em Roboto,sans-serif;
-    font-weight: 400;
-    color: var(--cor-secundaria2);
+    font: 1.5rem var(--font2), serif;
+    color: var(--cor-principal1);
+    text-shadow: -10px 5px 10px var(--cor-principal);
   }
 
   .carta-img{
     width: 100%;
-  }
- 
-  .carta:hover {
-    width: 40%;
-    height: 25rem;
-    transform: skew(0.9deg);
-    transition: 0.5s;
-    box-shadow: 2px 2px 2px var(--cor-secundaria1);
-  }
-
-  .emconstrucao {
-    font-family: Roboto;
-    font-weight: 700;
-    padding: 4%;
-    border-radius: 11px;
-    box-shadow: 0px 1px 2px;
-    background-color: var(--cor-principal1);
-    color: var(--cor-secundaria2);
+    height: 10rem;
   }
   
-  @media screen and (max-width: 767px) {
-    
-    .painel{
-      border-radius: 9px;
-    }
-    .titulo h1{
-      font-size: 1.5rem;
-      width: 50%;
-    }
-    
-    .titulo p{
-      font-size: 1rem;
-    }
-
-    .deck{
-      border-radius: 10px;
-      justify-content: center;
-    }
-
-    .carta:hover{
-      width: 100%;
-    }
+  .carta:hover {
+    transform: skew(0.9deg);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px var(--cor-principal);
   }
+  
+.c1{
+    grid-area: c1;
+}
+
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+}
+.c4{
+    grid-area: c4;
+}
+.c5{
+    grid-area: c5;
+}
+.c6{
+    grid-area: c6;
+}

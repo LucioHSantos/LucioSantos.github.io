@@ -1,0 +1,157 @@
+:root {
+    --cor-principal:#121c27;
+    --cor-principal2: #fafafa;
+    --cor-secundaria1:  #06af69;
+    --cor-secundaria2: #7d0aa0;
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Ubuntu', sans-serif;
+    }
+    .main{
+        display: grid;
+        grid-template-areas:
+        "a1 a1 a2 a2"
+        "0 0 0 a3";
+        margin: 10% auto;
+        max-width: 800px;
+        padding: 2%;
+        gap: 2%;
+        }
+
+  .myCard {
+    grid-area: a1;
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    perspective: 1000px;
+  }
+
+  .imagem{
+    grid-area: a2;
+    height: 24rem;
+  }
+  
+  .credits{
+    grid-area: a3;
+    margin-top: -20%;
+    padding: 2%;
+    font-size: 0.4rem;
+  }
+
+  .title {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin: 0;
+    color: var(--cor-principal);
+  }
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 8px solid var(--cor-principal);
+    border-radius: 1rem;
+    color: var(--cor-principal2);
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+  }
+  
+  .frontSide,
+  .frontSide::before,
+  .backSide,
+  .backSide::before  {
+    background: var(--cor-principal2);
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+  
+  .card-link{
+    padding: 2%;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font: 1rem minecraft, serif;
+    border-radius: 1rem;
+    border: 0.5rem solid var(--cor-principal);
+    background-color: var(--cor-principal2);
+    box-shadow: 0 0 0.5rem var(--cor-secundaria1);
+    color: var(--cor-principal);
+  }
+  
+  
+  
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .formulario{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .formulario-texto{
+      width: 95%;
+      margin: 5% auto;
+    }
+  
+    .form{
+      margin: 4% auto;
+    }
+  }
+
+
+
+
+
+
+
+

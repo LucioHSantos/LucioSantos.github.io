@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --cor-principal:#121c27;
+  --cor-principal2: #fafafa;
+  --cor-secundaria1:  #06af69;
+  --cor-secundaria2: #7d0aa0;
+  --font1: 'Open Sans', sans-serif;
+  --font2: 'Ubuntu', sans-serif;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url("../LucioSantos.github.io/assets/fontes/minecraft-reg.ttf");
+  }
+  
+
+  a{
+    text-decoration: none;
+    font-family: minecraft;
+    color: var(--cor-principal);
+  }
+
+  header,footer{
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: minecraft;
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  header img{
+    width: 6rem;
+    height: 6rem;
+    margin:1% 0 1% 6%;
+    padding: 0.1%;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--cor-secundaria1);
+    box-shadow: 0 0 1rem #06af69;
+  }
+
+  .nav{
+    margin-right: 6%;
+  }
+  .nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .nav-link, 
+  .pag-atual{
+    display: block;
+    padding: 2%;
+    font-size: 1.2rem;
+    background-color: var(--cor-principal2);
+    border: 0.4rem solid var(--cor-principal);
+    border-radius: 4rem;
+  }
+
+  .nav-link,
+  .footer-button{
+    box-shadow: 0.2rem 0.2rem var(--cor-secundaria2);
+  }
+
+  .pag-atual{
+    box-shadow: 0.2rem 0.2rem var(--cor-secundaria1);
+  }
+
+  .nav li:hover,
+  .footer-button:hover{
+    box-shadow: 0 0 0.5rem var(--cor-secundaria1);
+    transition: 0.3s;
+    transform: translate(3px, 3px);
+  }
+
+
+
+.footer-midias {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  height: 5rem;
+  margin-right: 3%;
+}
+
+.footer-midias img {
+  align-self: center;
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 30%;
+  border: 0.27rem solid var(--cor-principal);
+  background-color: var(--cor-principal2);
+}
+ 
+
+@media screen  and (max-width:600px) {
+  header img{
+    margin: 0 auto;
+  }
+  .nav-link, 
+  .pag-atual{
+    display: block;
+    padding: 2%;
+    font-size: 1rem;
+    background-color: var(--cor-principal2);
+    border: 0.4rem solid var(--cor-principal);
+    border-radius: 4rem;
+  }
+
+}
+
+
+
