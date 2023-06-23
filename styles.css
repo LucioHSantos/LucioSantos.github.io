@@ -223,8 +223,7 @@
   grid-template-columns: repeat(6, 1fr);
   row-gap: 15%;
   padding: 3rem 3rem 5rem 3rem;
-  box-shadow: 0.2rem 0.2rem var(--cor-principal);
-}
+ }
 
 .habilidades-item{
   display: flex;
