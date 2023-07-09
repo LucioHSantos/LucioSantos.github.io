@@ -1,9 +1,18 @@
 # Página de Portifólio
 
-  Portifólio visando mostrar um pouco sobre mim e o meu trabalho. 
+  Portifólio visando mostrar um pouco sobre mim e o meu trabalho. Nele encontrará alguns dos projetos com que tenho estudado e trabalhado, demonstrações das minhas skills e meus contatos.
 
-  ![pagina home](../LucioSantos.github.io/home_portifolio.png)
+  ## Deploy
+Para visualizar o deploy deste projeto por favor acesse:
+
+```bash
+  https://devluciosantos.netlify.app/
+```
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+![](https://img.shields.io/badge/HTML_-%237E1600)
+![](https://img.shields.io/badge/CSS_-%2306879B)
+![](https://img.shields.io/badge/Javascript_-%2337007E)
+
+## Homepage
+![](https://i.imgur.com/Vz4ub0o.png)
