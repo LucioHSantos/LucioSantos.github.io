@@ -11,7 +11,6 @@
   --cor-secundaria1:  #06af69;
   --cor-secundaria2: #7d0aa0;
   --font1: 'Open Sans', sans-serif;
-  --font2: 'Ubuntu', sans-serif;
 }
 
 
@@ -24,7 +23,8 @@
   max-width: 1200px;
   padding: 2%;
   gap: 2%;
-  font: 1.2rem var(--font2);
+  font: 1.2rem var(--font1);
+  font-weight: 600;
 }
 
 .lado-frontal,
@@ -99,7 +99,10 @@
     color: var(--cor-principal2);
     text-shadow: 0 0 0.3rem #0c020f;
   }
-
+  .texto-convite{
+    letter-spacing: 5px;
+    line-height: 25px;
+  }
  
 
   .funcoes{
@@ -148,7 +151,7 @@
     padding: 1rem;
     perspective: 30rem;
     border-radius: 10px;
-    box-shadow: 0  0 1rem var(--cor-principal);
+    box-shadow: 0  0 1rem var(--cor-principal2);
     cursor: pointer;
   }
 
@@ -212,8 +215,9 @@
 
 .texto p {
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   color: var(--cor-principal);
+  text-align: justify;
 }
 
 .habilidades{
@@ -241,14 +245,10 @@
   height: 4rem;
   margin-top: 5%;
   border-radius: 100px;
-  box-shadow: 0rem 0rem 0.7rem var(--cor-principal);
-  border: 2px solid var(--cor-principa2);
+  box-shadow: 0rem 0rem 0.8rem var(--cor-principal);
+  border: 3px solid var(--cor-principal2);
 }
   
-.habilidades-img:hover{
-  box-shadow: 0rem 0rem 0.7rem var(--cor-secundaria2);
-  padding: 1%;
-}
 
 
 @media screen  and (max-width:600px) {
